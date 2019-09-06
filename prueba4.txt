@@ -1,0 +1,20 @@
+public class MaxProduct {
+  public int adjacentElementsProduct(int[] array) {
+    int multi = 0;
+		int numeroac = 0;
+		for(int i = 0;i<array.length;i++){
+			int multi1 = 0;
+			if(i != 0){
+        if(i==1){
+					multi = numeroac*array[i];
+				}
+				multi1 = numeroac*array[i];
+				if(multi<multi1){
+					multi = multi1;
+				}
+			}
+			numeroac = array[i];
+		}
+    return multi;
+  }
+}

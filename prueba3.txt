@@ -1,0 +1,16 @@
+public class Printer {
+    
+    public static String printerError(String s) {
+        int errores = 0;
+        int total = s.length();
+        int i = 0;
+        while(i < s.length()){
+          if(String.valueOf(s.charAt(i)).matches("[^a-m]")){
+            errores++;
+          }
+          i++;
+        }
+        
+        return errores+"/"+total;
+    }
+}

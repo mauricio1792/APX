@@ -1,0 +1,12 @@
+public class EvenOrOdd {
+    public static String even_or_odd(int number) {
+    String msj;
+    if (number%2==0)
+      msj = "Even";
+    else
+      msj = "Odd";
+      
+      return msj;
+    }
+    
+}
